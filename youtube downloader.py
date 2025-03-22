@@ -4,12 +4,12 @@ import os
 # Get video URL input
 
 
-li=["https://youtu.be/vI6mMW17lvA?si=HADpsZ5ytadw9C4i" , "https://youtu.be/cNb9wDCRh-Q?si=ClTqHcBIP8rBCuwX" , "https://youtu.be/GuX9uFz_qnU?si=86OhNqJ_CqWfcWXM"] 
+video_list_links=[] 
 
 
 
 # Set download path
-download_path = "D:\\youtube_videos"  # Folder to save downloaded videos
+download_path = "D:\\youtube_videos"  # Folder path to save downloaded videos
 if not os.path.exists(download_path):
     os.makedirs(download_path)  # Create the folder if it doesn't exist
 
@@ -21,7 +21,9 @@ ydl_opts = {
 }
 
 # Download video
-for link in li:
+for link in video_list_links:
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
     print(f"Download completed! Video saved to: {download_path}")
+
+
