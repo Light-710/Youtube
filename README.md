@@ -18,8 +18,6 @@ Downloads YouTube videos using `yt-dlp`.
 
 
 
-
-
 # YouTube Audio Downloader
 
 A Python script to download audio from YouTube videos in **lossless FLAC format** using `yt-dlp`.
