@@ -1,6 +1,6 @@
 # Youtube
 
-# YouTube Downloader
+# YouTube Video Downloader
 
 Downloads YouTube videos using `yt-dlp`.
 
@@ -15,39 +15,35 @@ Downloads YouTube videos using `yt-dlp`.
 
 
 
-```markdown
-# YouTube Downloader
 
-Downloads YouTube videos using `yt-dlp`.
 
-## Usage
 
-1. Install `yt-dlp`:  
-   ```bash
-   pip install yt-dlp
-   ```
 
-2. Add YouTube URLs to `video_links` in the script.  
-   Example:  
-   ```python
-   video_links = [
-       "https://www.youtube.com/watch?v=example1",
-       "https://www.youtube.com/watch?v=example2",
-   ]
-   ```
 
-3. Set `download_path` to specify where files will be saved.  
-   Example:  
-   ```python
-   download_path = "D:\\youtube_downloads"  # Change this path
-   ```
 
-4. Run the script:  
-   ```bash
-   python your_script.py
-   ```
+# YouTube Audio Downloader
+
+A Python script to download audio from YouTube videos in **lossless FLAC format** using `yt-dlp`.
 
 ---
 
-**Note**: Ensure `ffmpeg` is installed for audio extraction. Use responsibly and comply with YouTube's terms of service.
-```
+## Features
+
+- Downloads audio in **FLAC format** for high-quality, lossless audio.
+- Saves files to a specified directory.
+- Supports multiple video URLs in one run.
+- Provides verbose output and progress updates during downloads.
+
+---
+
+## Requirements
+
+- Python 3.x
+- `yt-dlp` library
+- `ffmpeg` (for audio extraction)
+
+### Installation
+
+1. Install `yt-dlp`:
+   ```bash
+   pip install yt-dlp
