@@ -22,8 +22,3 @@ A Python script to download audio from YouTube videos in **lossless FLAC format*
 - `yt-dlp` library
 - `ffmpeg` (for audio extraction)
 
-### Installation
-
-1. Install `yt-dlp`:
-   ```bash
-   pip install yt-dlp
